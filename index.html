@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8"/>
+        <title>AI Chatbot</title>
+        <link rel="stylesheet" href="style.css"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Salsa&display=swap" rel="stylesheet">
+    </head>
+    <body>
+        <div class="heading">
+            <h1>AI Chatbot</h1>
+        </div>
+        <br/>
+        <div class="image">
+            <img id="robo" src="./robo.jpg"/>
+        </div>
+        <br>
+        <div class="input">
+            <input id="userBox" type="text"onkeydown="if(event.keyCode == 13){ talk() }" placeholder="type in here!!!"/>
+            <button onclick="talk()">SEND</button>
+        </div>
+        <br/>
+        <div class="response">
+            <p id="chatLog"></p>    
+        </div>
+        <script>
+            function talk(){
+                var know ={
+                    "Hi":"Hello",
+                    "Hey": "Hi",
+                    "How are you?":"Great !",
+                    "Bye":"Have a nice day !",
+                    "Hello":"Hi , Whats Up",
+                    "What is AI?":"Artificial intelligence (AI) is the simulation of human intelligence processes by machines, especially computer systems"
+                };
+                var user = document.getElementById('userBox').value;
+                document.getElementById('chatLog').innerHTML = user + "<br>";
+                if(user in know){
+                    document.getElementById('chatLog').innerHTML = know[user] + "<br>";
+                }else{
+                    document.getElementById('chatLog').innerHTML = "I do not understand .";
+                }
+            }
+        </script>
+    </body>
+</html>

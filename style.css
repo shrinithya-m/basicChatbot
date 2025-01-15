@@ -1,0 +1,63 @@
+
+body{
+    background-color: antiquewhite;
+    text-align: center;
+}
+
+#robo{
+    width: 10%;
+    height: 10%;  
+}
+
+.heading{
+    color: white;
+    background-color: coral;
+    font-family: "Salsa", cursive;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.input{
+    background-color: cornflowerblue;
+    padding: 5% 5% 5% 5%;
+}
+
+#userBox{
+    padding: 2% 5% 2% 5%;
+    border-color: cornflowerblue;
+    background-color: azure;
+    font-family: "Salsa", cursive;
+    font-weight: 400;
+    font-style: normal;
+    text-overflow: auto;
+
+}
+
+button{
+    background-color: greenyellow;
+    border-color: cornflowerblue;
+    padding: 2% 5% 2% 5%;
+    font-family: "Salsa", cursive;
+    font-weight: 400;
+    font-style: normal;
+    text-emphasis-color: black;
+}
+
+.response{
+    background-color: plum;
+    padding: 5%;
+    position: relative;
+}
+
+#chatLog{
+    padding: 2% 40% 2% 10%;
+    text-overflow: visible;
+    background-color: white;
+    color: black;
+    font-family: "Salsa", cursive;
+    font-weight: 200;
+    font-style: normal;
+    letter-spacing: 0.04em;
+
+}
+
